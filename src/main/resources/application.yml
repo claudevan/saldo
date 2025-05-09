@@ -5,15 +5,6 @@ spring:
 server:
   port: 8080
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  metrics:
-    enable:
-      all: true
-
 json:
   server:
     url: "http://localhost:3000"
@@ -22,3 +13,20 @@ logging:
   level:
     root: INFO
     github.com.claudevan.saldo: DEBUG
+    org.springframework.actuator: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # ou 'metrics' se quiser expor apenas métricas
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  prometheus:
+    metrics:
+      export:
+        enabled: true

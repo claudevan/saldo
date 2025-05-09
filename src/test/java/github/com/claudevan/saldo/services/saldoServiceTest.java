@@ -49,8 +49,7 @@ class SaldoServiceTest {
                 "12345",
                 "6",
                 "789",
-                "1000.00",
-                "1"
+                "1000.00"
         );
 
         String jsonResponse = objectMapper.writeValueAsString(List.of(conta));
@@ -116,8 +115,7 @@ class SaldoServiceTest {
                 "12345",
                 "6",
                 "789",
-                "1000.00",
-                "1"
+                "1000.00"
         );
 
         String jsonResponse = objectMapper.writeValueAsString(List.of(conta));

@@ -6,6 +6,5 @@ public record ContaResponse(
         String conta,
         String dac,
         String idCliente,
-        String saldo,
-        String id
+        String saldo
 ) {}
