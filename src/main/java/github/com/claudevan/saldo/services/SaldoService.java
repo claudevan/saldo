@@ -1,6 +1,7 @@
 
 package github.com.claudevan.saldo.services;
 
+import github.com.claudevan.saldo.exceptions.ValidacaoException;
 import github.com.claudevan.saldo.model.ContaResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.reactive.function.client.WebClientResponseException;
-import reactor.core.publisher.Mono;
 
 @Service
 public class SaldoService {
@@ -21,6 +21,8 @@ public class SaldoService {
     }
 
     public ContaResponse getSaldo(String idConta) {
+        validarIdConta(idConta);
+
         logger.info("Consultando saldo da conta {} no JSON Server", idConta);
         try {
             return webClient
@@ -36,4 +38,19 @@ public class SaldoService {
             throw new RuntimeException("Erro ao consultar saldo: " + e.getMessage());
         }
     }
+
+    private void validarIdConta(String idConta) {
+        if (idConta == null || idConta.trim().isEmpty()) {
+            throw new ValidacaoException("ID da conta não pode ser nulo ou vazio");
+        }
+
+//        if (!idConta.matches("\\d+")) {
+//            throw new ValidacaoException("ID da conta deve conter apenas números");
+//        }
+
+        if (idConta.length() != 36) {
+            throw new ValidacaoException("ID da conta deve ter 36 caracteres");
+        }
+    }
+
 }

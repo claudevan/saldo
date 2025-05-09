@@ -25,12 +25,9 @@ public class SaldoController {
 
         logger.info("Obtendo Saldo para a conta: {}", idConta);
 
-        try {
-            ContaResponse saldo = saldoService.getSaldo(idConta);
-            return ResponseEntity.ok().body(saldo);
-        } catch (Exception e) {
-            logger.error("Erro ao obter os dados da conta: {}", idConta, e);
-            return ResponseEntity.internalServerError().body("Error ao obter saldo");
-        }
+
+        ContaResponse saldo = saldoService.getSaldo(idConta);
+        return ResponseEntity.ok().body(saldo);
+
     }
 }
