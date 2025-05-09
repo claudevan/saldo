@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    image: openjdk:21-jdk
+    container_name: Api-Saldo
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: ["./mvnw", "spring-boot:run"]
+
+  api-fake:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    container_name: api-fake

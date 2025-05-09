@@ -1,0 +1,84 @@
+{
+  "contas": [
+    {
+      "idConta": "5df13be4-423e-42a2-8932-0dbf6acd3b29",
+      "agencia": "6315",
+      "conta": "0993149",
+      "dac": "8",
+      "idCliente": "10fa8077-2g27-44eb-8d12-7a3d6290ca35",
+      "saldo": "300.00"
+    },
+    {
+      "idConta": "1f2a4bcd-7c9e-11ed-a1eb-0242ac120002",
+      "agencia": "1234",
+      "conta": "5678901",
+      "dac": "5",
+      "idCliente": "20fa8077-3c47-54cb-9d12-8b3f6291ab56",
+      "saldo": "1500.75"
+    },
+    {
+      "idConta": "2b3c4d5e-7c9e-11ed-a1eb-0242ac120003",
+      "agencia": "4321",
+      "conta": "1987654",
+      "dac": "3",
+      "idCliente": "30fa8077-4d57-64db-ad12-9c4f7292bc67",
+      "saldo": "750.50"
+    },
+    {
+      "idConta": "3c4d5e6f-7c9e-11ed-a1eb-0242ac120004",
+      "agencia": "5678",
+      "conta": "2345678",
+      "dac": "4",
+      "idCliente": "40fa8077-5e67-74eb-be12-ad5f8293cd78",
+      "saldo": "200.00"
+    },
+    {
+      "idConta": "4d5e6f7g-7c9e-11ed-a1eb-0242ac120005",
+      "agencia": "8765",
+      "conta": "8765432",
+      "dac": "7",
+      "idCliente": "50fa8077-6f77-84fb-ce12-be6f9294de89",
+      "saldo": "1250.00"
+    },
+    {
+      "idConta": "5e6f7g8h-7c9e-11ed-a1eb-0242ac120006",
+      "agencia": "3456",
+      "conta": "6543210",
+      "dac": "2",
+      "idCliente": "60fa8077-7g87-94gb-de12-cf7f0295ef90",
+      "saldo": "600.00"
+    },
+    {
+      "idConta": "6f7g8h9i-7c9e-11ed-a1eb-0242ac120007",
+      "agencia": "2345",
+      "conta": "5432109",
+      "dac": "9",
+      "idCliente": "70fa8077-8h97-a4hc-ee12-dg8f1296fg01",
+      "saldo": "850.25"
+    },
+    {
+      "idConta": "7g8h9i0j-7c9e-11ed-a1eb-0242ac120008",
+      "agencia": "9876",
+      "conta": "1098765",
+      "dac": "1",
+      "idCliente": "80fa8077-9i07-b4id-fe12-eh9f2297gh12",
+      "saldo": "450.00"
+    },
+    {
+      "idConta": "8h9i0j1k-7c9e-11ed-a1eb-0242ac120009",
+      "agencia": "6543",
+      "conta": "3210987",
+      "dac": "6",
+      "idCliente": "90fa8077-aj17-c4je-ge12-fi0f3298hi23",
+      "saldo": "950.75"
+    },
+    {
+      "idConta": "9i0j1k2l-7c9e-11ed-a1eb-0242ac120010",
+      "agencia": "7654",
+      "conta": "4321098",
+      "dac": "0",
+      "idCliente": "a0fa8077-bk27-d4kf-he12-gj1f4299ij34",
+      "saldo": "3000.00"
+    }
+  ]
+}

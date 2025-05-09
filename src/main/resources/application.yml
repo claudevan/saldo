@@ -13,3 +13,12 @@ management:
   metrics:
     enable:
       all: true
+
+json:
+  server:
+    url: "http://localhost:3000"
+
+logging:
+  level:
+    root: INFO
+    github.com.claudevan.saldo: DEBUG
